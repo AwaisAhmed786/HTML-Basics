@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the outer box */
+        .outer-box {
+            width: 500px;
+            height: 500px;
+            background-color: #eee;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the box dimensions */
+            margin: 50px auto; /* Center the box */
+            position: relative; /* Enable positioning for inner boxes */
+        }
+
+        /* Style for the inner boxes */
+        .inner-box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .inner-box1 {
+            background-color: #3498db;
+            top: 0;
+            right: 0;
+        }
+
+        .inner-box2 {
+            background-color: #db3466;
+            top: 0;
+            left: 0;
+        }
+
+        .inner-box3 {
+            background-color: #380ed1;
+            bottom: 0;
+            right: 0;
+        }
+
+        .inner-box4 {
+            background-color: #14e252;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Style for the center box */
+        .center-box {
+            background-color: #ffcc00;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <title>Nested Boxes Example</title>
+</head>
+<body>
+
+    <div class="outer-box">
+        <p>This is the outer box</p>
+        <div class="inner-box inner-box1">
+            <p>This is the inner box</p>
+        </div>
+        <div class="inner-box inner-box2">
+            <p>This is the inner box</p>
+        </div>
+        <div class="inner-box inner-box3">
+            <p>This is the inner box</p>
+        </div>
+        <div class="inner-box inner-box4">
+            <p>This is the inner box</p>
+        </div>
+        <div class="center-box">
+            <p>This is the center box</p>
+        </div>
+    </div>
+
+</body>
+</html>
