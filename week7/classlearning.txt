@@ -1,0 +1,2 @@
+getelementby ID, class, tags
+query selector
